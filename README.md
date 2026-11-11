@@ -50,7 +50,7 @@ Lo agregaremos cuando el programa esté terminado.
 ## Avance
 
 - Día 1 – Análisis del problema: terminado
-- Día 2 – Diseño algorítmico y diagrama de flujo: pendiente
+- Día 2 – Diseño algorítmico y diagrama de flujo: terminado
 - Día 3 – Diseño de interfaz: pendiente
 - Día 4 – Desarrollo del módulo de captura: pendiente
 - Día 5 – Desarrollo de consultas: pendiente
