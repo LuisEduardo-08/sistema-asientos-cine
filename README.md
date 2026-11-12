@@ -51,7 +51,7 @@ Lo agregaremos cuando el programa esté terminado.
 
 - Día 1 – Análisis del problema: terminado
 - Día 2 – Diseño algorítmico y diagrama de flujo: terminado
-- Día 3 – Diseño de interfaz: pendiente
+- Día 3 – Diseño de interfaz: terminado
 - Día 4 – Desarrollo del módulo de captura: pendiente
 - Día 5 – Desarrollo de consultas: pendiente
 - Día 6 – Implementación de estadísticas: pendiente
