@@ -31,7 +31,7 @@ class Program
             switch (opcion)
             {
                 case "1":
-                    Console.WriteLine("Esta opción todavía no está lista.");
+                    MostrarSala();
                     break;
                 case "2":
                     ReservarAsiento();
@@ -101,8 +101,7 @@ class Program
             numero = Console.ReadLine();
         }
 
-        // Buscamos en qué lugar de la sala quedó.
-        // Por ejemplo, B4 es la fila 1 y el asiento 3, porque se cuenta desde 0.
+        // Buscamos en qué lugar de la sala quedó
         filaElegida = Array.IndexOf(filas, letra);
         columnaElegida = Array.IndexOf(asientos, numero);
     }
@@ -141,7 +140,31 @@ class Program
         }
     }
 
-    // Revisa un asiento: si tiene L está libre, si no, está ocupado.
+    // Dibuja la sala completa con L (libre) y X (ocupado).
+    static void MostrarSala()
+    {
+        Console.WriteLine("--- SALA ---");
+        Console.WriteLine("     1  2  3  4  5  6  7  8");
+
+        for (int fila = 0; fila < 5; fila++)
+        {
+            // Primero se escribe la letra de la fila.
+            Console.Write(filas[fila] + "    ");
+
+            // Luego los 8 asientos de esa fila.
+            for (int columna = 0; columna < 8; columna++)
+            {
+                Console.Write(sala[fila, columna] + "  ");
+            }
+
+            Console.WriteLine();
+        }
+
+        Console.WriteLine();
+        Console.WriteLine("L = Libre    X = Ocupado");
+    }
+
+    // Revisa un asiento: si tiene L está libre, si no está ocupado.
     static void ConsultarDisponibilidad()
     {
         Console.WriteLine("--- CONSULTAR DISPONIBILIDAD ---");
