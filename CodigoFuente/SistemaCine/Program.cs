@@ -39,8 +39,9 @@ class Program
                 case "3":
                     LiberarAsiento();
                     break;
-                // Estas opciones se agregan en los siguientes días.
                 case "4":
+                    ConsultarDisponibilidad();
+                    break;
                 case "5":
                     Console.WriteLine("Esta opción todavía no está lista.");
                     break;
@@ -137,6 +138,22 @@ class Program
         else
         {
             Console.WriteLine("El asiento ya está libre.");
+        }
+    }
+
+    // Revisa un asiento: si tiene L está libre, si no, está ocupado.
+    static void ConsultarDisponibilidad()
+    {
+        Console.WriteLine("--- CONSULTAR DISPONIBILIDAD ---");
+        PedirAsiento();
+
+        if (sala[filaElegida, columnaElegida] == 'L')
+        {
+            Console.WriteLine("El asiento está: Libre");
+        }
+        else
+        {
+            Console.WriteLine("El asiento está: Ocupado");
         }
     }
 }
