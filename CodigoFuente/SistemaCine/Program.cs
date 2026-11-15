@@ -180,12 +180,13 @@ class Program
         }
     }
 
-    // Se cuenta cuántos asientos están ocupados en la sala.
+    // Se cuentan los asientos ocupados y disponibles, y se saca el porcentaje de ocupación.
     static void VerEstadisticas()
     {
         Console.WriteLine("--- ESTADÍSTICAS ---");
 
         int ocupados = 0;
+        int disponibles = 0;
 
         // Se revisan todos los asientos uno por uno.
         for (int fila = 0; fila < 5; fila++)
@@ -196,9 +197,19 @@ class Program
                 {
                     ocupados = ocupados + 1;
                 }
+                else
+                {
+                    disponibles = disponibles + 1;
+                }
             }
         }
 
+        // La sala tiene 40 asientos (5 filas por 8 asientos).
+        // Se pone 100.0 para que el resultado pueda tener decimales.
+        double porcentaje = ocupados * 100.0 / 40;
+
         Console.WriteLine("Ocupados: " + ocupados);
+        Console.WriteLine("Disponibles: " + disponibles);
+        Console.WriteLine("Porcentaje de ocupación: " + porcentaje + " %");
     }
 }
