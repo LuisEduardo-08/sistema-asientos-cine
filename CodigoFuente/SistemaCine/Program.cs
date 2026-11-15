@@ -43,7 +43,7 @@ class Program
                     ConsultarDisponibilidad();
                     break;
                 case "5":
-                    Console.WriteLine("Esta opción todavía no está lista.");
+                    VerEstadisticas();
                     break;
                 case "6":
                     Console.WriteLine("Gracias por usar el sistema.");
@@ -178,5 +178,27 @@ class Program
         {
             Console.WriteLine("El asiento está: Ocupado");
         }
+    }
+
+    // Se cuenta cuántos asientos están ocupados en la sala.
+    static void VerEstadisticas()
+    {
+        Console.WriteLine("--- ESTADÍSTICAS ---");
+
+        int ocupados = 0;
+
+        // Se revisan todos los asientos uno por uno.
+        for (int fila = 0; fila < 5; fila++)
+        {
+            for (int columna = 0; columna < 8; columna++)
+            {
+                if (sala[fila, columna] == 'X')
+                {
+                    ocupados = ocupados + 1;
+                }
+            }
+        }
+
+        Console.WriteLine("Ocupados: " + ocupados);
     }
 }
