@@ -67,5 +67,5 @@ está ocupado.
 - Día 4 – Desarrollo del módulo de captura: terminado
 - Día 5 – Desarrollo de consultas: terminado
 - Día 6 – Implementación de estadísticas: terminado
-- Día 7 – Pruebas y documentación: pendiente
+- Día 7 – Pruebas y documentación: terminado
 - Día 8 – Exposición y demostración: pendiente
