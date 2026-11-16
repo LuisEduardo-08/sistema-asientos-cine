@@ -45,7 +45,19 @@ está ocupado.
 
 ## ¿Cómo se usa?
 
-Lo agregaremos cuando el programa esté terminado.
+**Lo que se necesita:** tener instalado el SDK de .NET 10.
+
+1. Descargar o clonar este repositorio.
+2. Abrir una terminal en la carpeta del repositorio.
+3. Escribir este comando para abrir el programa:
+
+   ```
+   dotnet run --project CodigoFuente/SistemaCine
+   ```
+
+4. Elegir una opción del menú escribiendo su número (1 a 6) y presionar Enter.
+5. Para reservar, liberar o consultar, escribir la fila (A a E) y el número de asiento (1 a 8). Por ejemplo: fila B, asiento 4.
+6. Para salir, elegir la opción 6.
 
 ## Avance
 
